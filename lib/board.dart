@@ -37,6 +37,10 @@ class Board {
     return true;
   }
   
+  bool updateCell(int row, int col, String symbol) {
+    return makeMove(row, col, symbol);
+  }
+  
   bool isFull() {
     for (int i = 0; i < _size; i++) {
       for (int j = 0; j < _size; j++) {
